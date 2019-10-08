@@ -25,8 +25,8 @@ This repository contains examples of various algorithms written on different pro
 |:----------------------------------------------------------------------------------------------- |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
 | [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))                               |                                       | [:octocat:](queue/Cpp)                |                                       |                                       |
 | [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))                               |                                       |                                       | [:octocat:](stack/Java)               | [:octocat:](stack/Python)             |
-| [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       |                                       | [:octocat:](linked_list/Python)       |
-| [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               |                                       | [:octocat:](avl_tree/Java)            | [:octocat:](avl_tree/Python)          |
+| [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                         |                                       | [:octocat:](linked_list/Python)       |
+| [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               | [:octocat:](avl_tree/CPP)             | [:octocat:](avl_tree/Java)            | [:octocat:](avl_tree/Python)          |
 
 
 ## Sample Run

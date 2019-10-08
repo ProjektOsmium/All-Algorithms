@@ -106,6 +106,3 @@ points.append(Point(0, 0))
 points.append(Point(3, 3)) 
 
 convexHull(points, len(points)) 
-
-# This code is contributed by 
-# Akarsh Somani, IIIT Kalyani 

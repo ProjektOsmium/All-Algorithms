@@ -1,0 +1,18 @@
+import cmath
+a = float((input("Please put in the first coefficient:")))
+print(a)
+if a == 0:
+  print("Not a quadratic equation, program is closing!")
+  exit()
+b = float((input("Please put in the second coefficient:")))
+print(b)
+c = float((input("Please put in the number:")))
+print(c)
+d = (cmath.sqrt(b**2 - 4*a*c))
+
+p = (-b + d)/(2*a)
+n = (-b - d)/(2*a)
+
+print("Your two answers are:")
+print(p)
+print(n)

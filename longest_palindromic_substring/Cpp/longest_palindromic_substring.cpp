@@ -48,6 +48,7 @@ int longestPalSubstr(string str)
    printSubStr( str, start, start + maxLength - 1 );
     return maxLength;
 }
+
 int main()
 {
     string str="abcdaabbaacd"

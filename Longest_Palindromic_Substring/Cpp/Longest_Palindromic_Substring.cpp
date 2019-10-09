@@ -50,9 +50,7 @@ int longestPalSubstr(string str)
 }
 int main()
 {
-    string str;
-    cout<<"enter the string :";
-    cin>>str;
+    string str="abcdaabbaacd"
     cout << "\nLength is: " << longestPalSubstr( str );
     return 0;
 }

@@ -34,8 +34,8 @@ int max(int a, int b)
 
 int main()
 {
-    string X,Y;
-    cin>>X>>Y;
+    string X="AGGTAB";
+    string Y="GXTXAYB";
 
     int m = strlen(X);
     int n = strlen(Y);

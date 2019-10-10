@@ -43,45 +43,6 @@ void display(List* dll);
 // Deallocates resources held by the list
 void destroy_list(List* dll);
 
-int main() {
-    List* dll = initialize_list();
-    int ele, choice, pos;
-    
-    do {
-        scanf("%d", &choice);
-
-        switch(choice) {
-            // Insert at beginning
-            case 1:
-                scanf("%d", &ele);
-                insert_front(dll, ele);
-                break;
-
-            // Delete at position
-            case 2:
-                scanf("%d", &pos);
-                position_delete(dll, pos);
-                break;
-
-            // Search for element
-            case 3:
-                scanf("%d", &ele);
-                pos = search_list(dll, ele);
-                printf("%d\n", pos);
-                break;
-
-            // Print entire list
-            case 4:
-                display(dll);
-                break;        
-        }
-    }
-    while (choice != 0);
-
-    destroy_list(dll);
-    return 0;
-}
-
 List* initialize_list() {
     List *temp = (List*)malloc(sizeof(List));
     temp->head = NULL;
@@ -119,11 +80,13 @@ void position_delete(List* dll, int pos) {
     {
         if(temp->next == NULL)
         {
+            printf("%d is deleted from the list\n",temp->data);
             dll->head = NULL ;
             free(temp);
         }
         else
         {
+            printf("%d is deleted from the list\n",temp->data);
             dll->head = temp->next;
             temp->next->prev = NULL;
             temp->prev = NULL;
@@ -139,11 +102,13 @@ void position_delete(List* dll, int pos) {
         }
         if(pos == count && temp->next == NULL)
         {
+            printf("%d is deleted from the list\n",temp->data);
             temp->prev->next = NULL;
             free(temp);
         }
         else if(pos == count && temp->next != NULL)
         {
+            printf("%d is deleted from the list\n",temp->data);
             temp->prev->next = temp->next;
             temp->next->prev = temp->prev;
         }
@@ -172,9 +137,10 @@ void display(List* dll) {
     Node *temp = dll->head;
     if(temp == NULL)
     {
-        printf("EMPTY\n");
+        printf("List is EMPTY\n");
         return;
     }
+    printf("Elements in list = ");
     while(temp->next != NULL)
     {
         printf("%d ",temp->data);
@@ -197,20 +163,32 @@ void destroy_list(List* dll) {
     free(dll);
 }
 
+int main() {
+    List* dll = initialize_list();
+    int pos;
 
-/*
-Sample Input        Sample Output
-1 1                 3 2 1
-1 2                 1
-1 3                 -1
-4                   2 1
-3 2                 EMPTY
-3 5
-2 0
-2 2
-4
-2 0
-2 0
-4
-0
-*/
+    insert_front(dll, 1);
+    insert_front(dll, 2);
+    insert_front(dll, 3);
+
+    display(dll);
+
+    pos = search_list(dll, 2);
+    printf("Position of %d in list = %d\n",2, pos);
+
+    pos = search_list(dll, 5);
+    printf("Position of %d in list = %d\n",5, pos);
+
+    position_delete(dll, 0);
+    position_delete(dll, 2);
+    
+    display(dll);
+
+    position_delete(dll, 0);
+    position_delete(dll, 0);
+
+    display(dll);
+
+    destroy_list(dll);
+    return 0;
+}

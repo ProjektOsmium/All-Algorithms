@@ -80,13 +80,8 @@ void mergeSort(int *a, int low, int high)
 
 int main()
 {
-	int n;
-	cout<<"Enter size of array: ";
-	cin>>n;
-	int a[n];
-	cout<<"Enter array elements: ";
-	for(int i=0;i<n;i++)
-		cin>>a[i];
+	int a[] = {45,62,34,78,92,27,89,12,3,53};
+	int n = sizeof(a)/sizeof(a[0]);
 	mergeSort(a,0,n-1);
 	cout<<"Sorted array: ";
 	for(int i =0;i<n;i++)

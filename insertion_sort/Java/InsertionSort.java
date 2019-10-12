@@ -58,4 +58,6 @@ public class InsertionSort{
         arr.display();
 
     }
+
+}
 }

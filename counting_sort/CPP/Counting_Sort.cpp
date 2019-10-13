@@ -40,14 +40,8 @@ void countSort(int *array, int size) {
 
 int main() 
 {
-   int n;
-   cout << "Enter the number of elements: ";
-   cin >> n;
-   int arr[n+1];       //create an array with given number of elements
-   cout << "Enter elements:" << endl;
-   for(int i = 1; i<=n; i++) {
-      cin >> arr[i];
-   }
+   int arr[] = {-5, -10, 0, -3, 8, 5, -1, 10};
+   int n = sizeof(arr)/sizeof(arr[0])
    cout << "Array before Sorting: ";
    display(arr, n);
    countSort(arr, n);

@@ -1,0 +1,22 @@
+#Given a Linked List it removes duplicate nodes
+#Slow and Fast pointer concept is used 
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def deleteDuplicates(self, head: ListNode) -> ListNode:
+        if head == None:   #linked list is empty returns head
+            return head
+        q = head.next
+        p = head
+        while q != None:
+            if q.val == p.val:  
+                p.next = q.next
+                q = q.next
+            else:
+                q = q.next
+                p = p.next
+        return head 

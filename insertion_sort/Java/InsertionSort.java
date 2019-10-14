@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.*;
-public class Main {
+public class InsertionSort {
 
     public static void main(String[] args) {
 	    List<Integer> lst = Arrays.asList(23,34,36,8,3,54,6,10,1,62);

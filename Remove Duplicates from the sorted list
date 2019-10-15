@@ -1,22 +1,36 @@
 #Given a Linked List it removes duplicate nodes
+#Test Case 1:
+#Given Linked List is: 11->11->11->21->43->43->60 
+#Output: 11->21->43->60
 #Slow and Fast pointer concept is used 
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution:
-    def deleteDuplicates(self, head: ListNode) -> ListNode:
-        if head == None:   #linked list is empty returns head
-            return head
-        q = head.next
-        p = head
-        while q != None:
-            if q.val == p.val:  
-                p.next = q.next
-                q = q.next
-            else:
-                q = q.next
-                p = p.next
-        return head 
+class ListNode:
+  def __init__(self, x):
+    self.val = x
+    self.next = None
+  def deleteDuplicates(self, head):
+    if head == None:
+      return head
+    q = head.next
+    p = head
+    while q != None:
+      if q.val == p.val:
+        p.next = q.next
+        q = q.next
+      else:
+        q = q.next
+        p = p.next
+    return head 
+  def printList(self, head):
+    temp = head  
+    while(temp):
+      print(temp.val , end = ' ') 
+      temp = temp.next
+A = ListNode(1)
+A.next = ListNode(2)
+A.next.next = ListNode(2)
+A.next.next.next = ListNode(3)
+A.next.next.next.next = ListNode(4)
+A.next.next.next.next.next = ListNode(4)
+A.deleteDuplicates(A)
+A.printList(A) # output 1,2,3,4

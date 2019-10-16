@@ -9,11 +9,7 @@ int euclidean_algorithm(int a, int b) {
 }
 
 int main() {
-  int input[2];
-
-  cin >> input[0] >> input[1];
-
-  int GCD = euclidean_algorithm(input[0], input[1]);
+  int GCD = euclidean_algorithm(20, 30);
 
   cout << GCD << endl;
 }

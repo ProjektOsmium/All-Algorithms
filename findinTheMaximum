@@ -1,0 +1,30 @@
+package largeNumberInArray;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int[] myArray;
+		System.out.println("Please enter the array size");
+		int n = scanner.nextInt();
+		myArray = new int[n];
+		//initially the max is the first value;
+		int max = myArray[0];
+		
+		for(int i = 0; i < myArray.length; i++)
+		{
+			if(max < myArray[i] ) 
+			{
+				max = myArray[i];
+			}
+		}
+		
+		
+		System.out.println("The maximum is " + max);
+		
+	}
+
+}

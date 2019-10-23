@@ -7,7 +7,7 @@
 #include <thread>
 #include <future>
 using namespace std; 
-// Print table. 'pos' is a vector of positions – the index in pos is the row,
+// Print table. 'pos' is a vector of positions â€“ the index in pos is the row,
 // and the number at that index is the column where the queen is placed.
 static void print(const std::vector<int> &pos)
 {

@@ -2,16 +2,19 @@
 #include <queue>
 using namespace std;
 
+//Definition of the nodes of BST
 class node{
 public:
 	int data;
 	node* left;
 	node* right;
-	node(int d){
+	node(int d){    // constructor for creating the node
 		data =d;
 		left = right=NULL;
 	}
 };
+
+//For inserting a node in a non -empty BST
 
 node* InsertInBst(node* root,int data){
 	if(root == NULL){
@@ -28,6 +31,7 @@ node* InsertInBst(node* root,int data){
 	return root;
 }
 
+// Creating a BST from initial values
 node* CreateBST(){
 	node* root = NULL;
 	int data;
@@ -40,6 +44,7 @@ node* CreateBST(){
 	return root;
 }
 
+//Preorder Traversal of the BST
 void PreOrder(node* root){
 	if(root == NULL){
 		return;
@@ -50,7 +55,7 @@ void PreOrder(node* root){
 	PreOrder(root->right);
 }
 
-
+// Inorder Traversal Of the BST
 void InOrder(node* root){
 	if(root == NULL){
 		return;
@@ -61,7 +66,7 @@ void InOrder(node* root){
 	InOrder(root->right);
 }
 
-
+//PostOrder  Traversal of the BST
 void PostOrder(node* root){
 	if(root == NULL){
 		return;
@@ -71,7 +76,7 @@ void PostOrder(node* root){
 	PostOrder(root->right);
 	cout<<root->data<<' ';
 }
-
+// LevelOrder Traversal of the BST
 void LevelOrder(node* root){
 	queue<node*> q;
 	q.push(root);
@@ -97,6 +102,7 @@ void LevelOrder(node* root){
 	}
 }
 
+// Function to print the BST
 void Print(node* head){
 	while(head){
 		cout<<head->data<<"-->";
@@ -105,9 +111,11 @@ void Print(node* head){
 	cout<<"NULL"<<endl;
 }
 
+
 int main(){
+	//Creating an empty BST
 	node* root = NULL;
-	root = CreateBST();
+	root = CreateBST(); 
 	
 	 PreOrder(root);
 	 cout<<endl;

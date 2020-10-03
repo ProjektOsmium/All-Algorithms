@@ -17,7 +17,7 @@ This repository contains examples of various algorithms written on different pro
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           | [:octocat:](shell_sort/C)             |                                       |                                       | [:octocat:](shell_sort/Python)        |
 | [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |   [:octocat:](heap_sort/Cpp)                                      |     [:octocat:](heap_sort/Java)                                    | [:octocat:](heap_sort/python)        |
 | [Maximum Subarray Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem)              |                                       |                                       |                                       | [:octocat:](/maximum_subarray/Python)|
-
+| [Coin Change Problem](https://en.wikipedia.org/wiki/Change-making_problem)              |  [:octocat:](/coin_change_problem/C)  |      [:octocat:](/coin_change_problem/Cpp)                                 |                                       | [:octocat:](/coin_change_problem/Python)|
 
 ## Implemented Data Structures
 

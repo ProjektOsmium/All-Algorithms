@@ -27,6 +27,8 @@ This repository contains examples of various algorithms written on different pro
 | [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))                               | [:octocat:](stack/C)                  | [:octocat:](stack/Cpp)                                      | [:octocat:](stack/Java)               | [:octocat:](stack/Python)             |
 | [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            | [:octocat:](linked_list/CPP)                                                                                           | [:octocat:](linked_list/Java)                                      | [:octocat:](linked_list/Python)       |
 | [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               | [:octocat:](avl_tree/CPP)             | [:octocat:](avl_tree/Java)            | [:octocat:](avl_tree/Python)          |
+| [Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)                                              | [](binary_tree/C)               | [](binary_tree/CPP)             | [](binary_tree/Java)            | [](binary_tree/Python)          |
+
 
 
 ## Sample Run
